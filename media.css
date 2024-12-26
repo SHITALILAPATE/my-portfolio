@@ -1,0 +1,303 @@
+/* Mobile View */
+@media (max-width: 1024px) {
+    header {
+        padding: 15px 5%;
+    }
+    
+    header.sticky {
+        padding: 10px 5%;
+    }
+    
+    section {
+        padding: 60px 5% 40px;
+    }
+    
+    
+    .footer {
+        padding: 10px 5%;
+    }
+    
+    /* .logo {
+        font-size: 24px;
+    } */
+    
+    .hero {
+        height: 80vh;
+    }
+    
+    .about {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .about-img {
+        height: 250px; /* Adjust the height as needed */
+        max-width: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+    
+    .about-img img {
+        height: 100%; /* Make sure the image covers the circular container */
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    :root {
+        --h1-font: 3rem;
+        --h2-font: 1.8rem;
+        --p-font: 14px;
+    }
+    
+    .social {
+        margin-bottom: 15px;
+    }
+    
+    #menu-icon {
+        display: flex;
+    }
+    
+    .navlist {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        transform: all .50s ease;
+    }
+    
+    .navlist {
+        display: block;
+        padding: 15px;
+        font-size: 18px;
+    }
+    
+    .navlist.active {
+        right: 0;
+    }
+    
+    .main-contain p {
+        width: 100%;
+    }
+    
+    .about-img img {
+        height: 200px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .blog-content {
+        grid-template-columns: repeat(3, minmax(300px, 1fr));
+    }
+}
+
+@media screen and (min-width: 649px) {
+    .chat {
+        top:inherit;
+        left: inherit;
+        height: inherit;
+        width: 350px;
+        right: 50px;
+        bottom: 50px;
+        border-radius: 10px;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px)
+    }
+
+    .chat-bar {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px 10px 0 0;
+        padding: 15px;
+        color: var(--white-color);
+        font-size: 14px
+    }
+
+    .chat-bar button {
+        position: absolute;
+        top: 18px;
+        border: none;
+        padding: 8px;
+        display: flex;
+        border-radius: 8px;
+        right: 15px
+    }
+
+    .chat-container {
+        height: 550px;
+        padding: 10px;
+        overflow-y: auto;
+        border-radius: 0 0 10px 10px;
+        border: 1px solid #434343;
+        border-top: none
+    }
+
+    .chat-container-message {
+        display: flex;
+        align-items: start;
+        flex-direction: column
+    }
+
+    .message {
+        font-weight: 500;
+        letter-spacing: normal;
+        line-height: 1.5;
+        font-size: 15px;
+        padding: 12px 14px;
+        margin-bottom: 10px
+    }
+
+    .chat-container-buttons {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        text-align: left
+    }
+
+    .chat-container-buttons button {
+        text-align: left;
+        letter-spacing: .5px;
+        line-height: 1.5;
+        padding: 15px;
+        font-size: 15px;
+        background-color: transparent;
+        border-radius: 30px;
+        color: #f5f7f6;
+        border: 1px solid #c4d6ce
+    }
+}
+
+@media screen and (min-width: 385px) {
+    .nav-links-item {
+        padding:15px 5px;
+        margin: 0 10px
+    }
+
+    .nav-slider {
+        width: 60px
+    }
+
+    .nav-slider.Home {
+        transform: translate(0);
+        width: 60px
+    }
+
+    .nav-slider.About {
+        transform: translate(70px);
+        width: 60px
+    }
+
+    .nav-slider.Work {
+        transform: translate(138px);
+        width: 60px
+    }
+
+    .nav-slider.Writings {
+        width: 75px;
+        width: 60px;
+        transform: translate(205px)
+    }
+}
+
+@media screen and (min-width: 461px) {
+    .nav-links-item {
+        font-size:14px;
+        padding: 15px;
+        margin: 0 5px
+    }
+
+    .nav-slider {
+        left: 8px;
+        width: 70px;
+        height: 35px
+    }
+
+    .nav-slider.Home {
+        transform: translate(0)
+    }
+
+    .nav-slider.About {
+        transform: translate(80px)
+    }
+
+    .nav-slider.Work {
+        transform: translate(160px)
+    }
+
+    .nav-slider.Writings {
+        transform: translate(242px);
+        width: 85px
+    }
+}
+
+@media screen and (min-width: 690px) {
+    .navlist {
+        margin-top:30px
+    }
+
+     .navlist {
+        cursor: pointer;
+        transition: all .2s ease;
+        font-size: 17px;
+        z-index: 2;
+        padding: 18px 30px;
+        margin: 0 5px;
+        font-weight: 300
+    }
+
+    .nav-slider {
+        left: 8px;
+        width: 100px;
+        height: 40px
+    }
+
+    .nav-slider.Home {
+        transform: translate(0);
+        width: 100px
+    }
+
+    .nav-slider.About {
+        transform: translate(119px);
+        width: 100px
+    }
+
+    .nav-slider.Work {
+        transform: translate(240px);
+        width: 100px
+    }
+
+    .nav-slider.portpholio {
+        transform: translate(365px);
+        width: 100px;
+        width: 98px
+    }
+}
+
+/* Your existing styles */
+
+/* Media Query for small screens */
+@media screen and (max-width: 768px) {
+    .navlist {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navlist-item {
+        padding: 10px 5px;
+        margin: 5px 0;
+    }
+
+    .navlist-filled {
+        margin-top: 10px;
+    }
+
+    .nav-slider {
+        display: none; /* Optional: Hide the slider on small screens */
+    }
+}
+
+/* Additional Media Queries for larger screens can be added as needed */
